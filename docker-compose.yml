@@ -1,0 +1,8 @@
+services:
+  linux:
+    image: linux-test
+    command: tail -f /dev/null
+    volumes:
+      - compartido:/disco-constante
+volumes:
+  compartido:
