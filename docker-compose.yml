@@ -2,6 +2,8 @@ services:
   linux:
     image: linux-test
     command: tail -f /dev/null
+    tmpfs:
+      - /disco-temporal
     volumes:
       - compartido:/disco-constante
 volumes:

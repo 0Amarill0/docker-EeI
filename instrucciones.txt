@@ -1,0 +1,17 @@
+Construir la imagen:
+docker build -t [nombre] .
+
+Arrancar y construir la imagen si es necesario(el flag -d es para que corra en segundo plano y no bloquee la terminal:)
+docker-compose up -d
+
+Para limpiar todo al terminar:
+docker-compose down
+
+Ver si está corriendo:
+docker ps
+
+Ver discos creados:
+docker volume ls
+
+Entrar a la terminal:
+docker exec -it [nombre-contenedor] bash
