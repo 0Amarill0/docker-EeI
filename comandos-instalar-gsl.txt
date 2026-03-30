@@ -1,0 +1,14 @@
+Tutorial: https://coral.ise.lehigh.edu/jild13/2016/07/11/hello/
+
+apt-get update
+apt-get install wget
+apt-get install gcc
+apt-get install make
+wget ftp://ftp.gnu.org/gnu/gsl/gsl-1.0.tar.gz
+tar -zxvf gsl-1.0.tar.gz
+cd gsl-1.0
+./configure
+make
+make check
+make install
+rm -r gsl*
