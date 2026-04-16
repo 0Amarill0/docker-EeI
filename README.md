@@ -19,24 +19,30 @@ Ensure you have the following installed:
 
 ### 1. Build the Image
 To build the Docker image locally:
+```
 docker build -t [image-name] .
+```
 
 ### 2. Launch the Environment
 Start the services in detached mode:
+```
 docker-compose up -d
+```
 
 ### 3. Access the Container
 Open an interactive terminal inside the running container:
+```
 docker exec -it [container-name] bash
+```
 
 ### 4. Verify Resources
-- Check running containers: docker ps
-- List volumes: docker volume ls
+- Check running containers: ```docker ps```
+- List volumes: ```docker volume ls```
 
 ## GSL Installation Steps
 
 Once inside the container, you can install the GNU Scientific Library (GSL) by running the following sequence:
-
+```
 apt-get update
 apt-get install wget
 apt-get install gcc
@@ -49,6 +55,7 @@ make
 make check
 make install
 rm -r gsl*
+```
 
 Note: Installation steps based on instructions from Lehigh University.
 
@@ -61,4 +68,6 @@ The environment is configured with two specialized storage areas:
 ## Cleanup
 
 To stop the containers and remove the created resources:
+```
 docker-compose down
+``` 
