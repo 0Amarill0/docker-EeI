@@ -23,16 +23,10 @@ To build the Docker image locally, the name we have assigned to the image is lin
 docker build -t [image-name] .
 ```
 
-### 2. Launch the Environment
-Start the services in detached mode:
+### 2. Launch and access de containter
+Start the services using the script:
 ```
-docker-compose up -d
-```
-
-### 3. Access the Container
-Open an interactive terminal inside the running container:
-```
-docker exec -it [container-name] bash
+./iniciar_docker.sh
 ```
 
 ### 4. Verify Resources
