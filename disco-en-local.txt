@@ -1,0 +1,1 @@
+\\wsl.localhost\docker-desktop\tmp\docker-desktop-root\var\lib\docker\volumes\docker-eei_compartido

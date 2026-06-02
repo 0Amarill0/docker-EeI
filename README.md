@@ -18,7 +18,7 @@ Ensure you have the following installed:
 ## Getting Started
 
 ### 1. Build the Image
-To build the Docker image locally:
+To build the Docker image locally, the name we have assigned to the image is linux-test:
 ```
 docker build -t [image-name] .
 ```
