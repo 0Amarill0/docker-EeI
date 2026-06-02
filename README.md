@@ -29,7 +29,7 @@ Start the services using the script:
 ./iniciar_docker.sh
 ```
 
-### 4. Verify Resources
+### 3. Verify Resources
 - Check running containers: ```docker ps```
 - List volumes: ```docker volume ls```
 
