@@ -23,7 +23,7 @@ To build the Docker image locally, the name we have assigned to the image is lin
 docker build -t [image-name] .
 ```
 
-### 2. Launch and access de containter
+### 2. Launch and access the containter
 Start the services using the script:
 ```
 ./iniciar_docker.sh
@@ -32,6 +32,12 @@ Start the services using the script:
 ### 3. Verify Resources
 - Check running containers: ```docker ps```
 - List volumes: ```docker volume ls```
+
+### 4. Enter a container
+Use the script with the name of the container you wish to access:
+ ```
+./entrar-contenedor.sh  <container-name>
+``` 
 
 ## GSL Installation Steps
 
