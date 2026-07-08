@@ -1,13 +1,5 @@
 services:
-  linux1:
-    build: .
-    image: linux-test
-    command: tail -f /dev/null
-    tmpfs:
-      - /disco-temporal
-    volumes:
-      - compartido:/disco-constante
-  linux2:
+  linux:
     build: .
     image: linux-test
     command: tail -f /dev/null
